@@ -1,82 +1,6 @@
-# Day 00 — SQL Bootcamp
-
-## _Relational Data Model and SQL_
-
-Resume: Today you will see how relational model works and how to get needed data based on basic constructions of SQL.
-
-💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
-
-## Contents
-
-1. [Chapter I](#chapter-i) \
-    1.1. [Preamble](#preamble)
-2. [Chapter II](#chapter-ii) \
-    2.1. [General Rules](#general-rules)
-3. [Chapter III](#chapter-iii) \
-    3.1. [Rules of the day](#rules-of-the-day)  
-4. [Chapter IV](#chapter-iv) \
-    4.1. [Exercise 00 — First steps into SQL world](#exercise-00-first-steps-into-sql-world)  
-5. [Chapter V](#chapter-v) \
-    5.1. [Exercise 01 — First steps into SQL world](#exercise-01-first-steps-into-sql-world)  
-6. [Chapter VI](#chapter-vi) \
-    6.1. [Exercise 02 — First steps into SQL world](#exercise-02-first-steps-into-sql-world)  
-7. [Chapter VII](#chapter-vii) \
-    7.1. [Exercise 03 — First steps into SQL world](#exercise-03-first-steps-into-sql-world)  
-8. [Chapter VIII](#chapter-viii) \
-    8.1. [Exercise 04 — First steps into SQL world](#exercise-04-first-steps-into-sql-world)
-9. [Chapter IX](#chapter-ix) \
-    9.1. [Exercise 05 — First steps into SQL world](#exercise-05-first-steps-into-sql-world)
-10. [Chapter X](#chapter-x) \
-    10.1. [Exercise 06 — First steps into SQL world](#exercise-06-first-steps-into-sql-world)
-11. [Chapter XI](#chapter-xi) \
-    11.1. [Exercise 07 — First steps into SQL world](#exercise-07-first-steps-into-sql-world)
-12. [Chapter XII](#chapter-xii) \
-    12.1. [Exercise 08 — First steps into SQL world](#exercise-08-first-steps-into-sql-world)
-13. [Chapter XIII](#chapter-xiii) \
-    13.1. [Exercise 09 — First steps into SQL world](#exercise-09-first-steps-into-sql-world)
-
-## Chapter I
-## Preamble
-
-![D01_01](misc/images/D01_01.png)
-
-Standards are everywhere, and Relational Databases are also under control as well :-). To be honest between us, more restricted SQL standards were at the beginning of 2000 years. Actually when the “Big Data” pattern was born, Relational Databases had their own way to realize this pattern and therefore standards are more... lightweight right now. 
-
-![D01_02](misc/images/D01_02.png)
-
-Please take a look at some SQL standards below and try to think about the future of Relational Databases.
-
-|  |  |
-| ------ | ------ |
-| ![D01_03](misc/images/D01_03.png) | ![D01_04](misc/images/D01_04.png) |
-| ![D01_05](misc/images/D01_05.png) | ![D01_06](misc/images/D01_06.png) |
-| ![D01_07](misc/images/D01_07.png) | ![D01_08](misc/images/D01_08.png) |
-
-## Chapter II
-## General Rules
-
-- Use this page as your only reference. Do not listen to rumors and speculations about how to prepare your solution.
-- Make sure you are using the latest version of PostgreSQL.
-- It is perfectly fine if you use the IDE to write source code (aka SQL script).
-- To be evaluated, your solution must be in your GIT repository.
-- Your solutions will be evaluated by your peers.
-- You should not leave any files in your directory other than those explicitly specified by the exercise instructions. It is recommended that you modify your `.gitignore' to avoid accidents.
-- Got a question? Ask your neighbor to the right. Otherwise, try your neighbor on the left.
-- Your reference manual: mates / Internet / Google. 
-- Read the examples carefully. You may need things not specified in the topic.
-- And may the SQL-Force be with you!
-- Absolutely anything can be represented in SQL! Let's get started and have fun!
-
-## Chapter III
-## Rules of the day
-
--  Please make sure you have your own database and access to it on your PostgreSQL cluster.
-- Please download a [script](materials/model.sql) with Database Model here and apply the script to your database (you can use command line with psql or just run it through any IDE, for example DataGrip from JetBrains or pgAdmin from PostgreSQL community). 
-- All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
-- Please have a look at the Logical View of our Database Model. 
+# Part_1 -> Day_00
 
 ![schema](misc/images/schema.png)
-
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
 - field id — primary key
@@ -106,7 +30,6 @@ Please take a look at some SQL standards below and try to think about the future
 
 People's visit and people's order are different entities and don't contain any correlation between data. For example, a customer can be in a restaurant (just looking at the menu) and at the same time place an order in another restaurant by phone or mobile application. Or another case, just be at home and again make a call with order without any visits.
 
-## Chapter IV
 ## Exercise 00 — First steps into SQL world
 
 | Exercise 00: First steps into SQL world |                                                                                                                          |
@@ -119,8 +42,6 @@ People's visit and people's order are different entities and don't contain any c
 Let’s make our first task. 
 Please make a select statement which returns all person's names and person's ages from the city ‘Kazan’.
 
-
-## Chapter V
 ## Exercise 01 — First steps into SQL world
 
 | Exercise 01: First steps into SQL world |                                                                                                                          |
@@ -132,7 +53,6 @@ Please make a select statement which returns all person's names and person's age
 
 Please make a select statement which returns names , ages for all women from the city ‘Kazan’. Yep, and please sort result by name.
 
-## Chapter VI
 ## Exercise 02 — First steps into SQL world
 
 | Exercise 02: First steps into SQL world |                                                                                                                          |
@@ -146,7 +66,6 @@ Please make 2 syntax different select statements which return a list of pizzeria
 - the 1st select statement must contain comparison signs  (<=, >=);
 - the 2nd select statement must contain `BETWEEN` keyword.
 
-## Chapter VII
 ## Exercise 03 — First steps into SQL world
 
 | Exercise 03: First steps into SQL world |                                                                                                                          |
@@ -158,7 +77,6 @@ Please make 2 syntax different select statements which return a list of pizzeria
 
 Please make a select statement that returns the person identifiers (without duplicates) who visited pizzerias in a period from January 6, 2022 to January 9, 2022 (including all days) or visited pizzerias with identifier 2. Also include ordering clause by person identifier in descending mode.
 
-## Chapter VIII
 ## Exercise 04 — First steps into SQL world
 
 
@@ -176,7 +94,6 @@ Please make a select statement which returns one calculated field with name ‘p
 Finally, please add the ordering clause by calculated column in ascending mode.
 Please pay attention to the quotation marks in your formula!
 
-## Chapter IX
 ## Exercise 05 — First steps into SQL world
 
 
@@ -198,7 +115,6 @@ Please take a look at the pattern of internal query.
     FROM ...
     WHERE ...
 
-## Chapter X
 ## Exercise 06 — First steps into SQL world
 
 
@@ -216,7 +132,6 @@ Use the SQL construction from Exercise 05 and add a new calculated column (use c
     if (person_name == 'Denis') then return true
         else return false
 
-## Chapter XI
 ## Exercise 07 — First steps into SQL world
 
 
@@ -236,7 +151,6 @@ Please make an SQL statement that returns the identifiers of a person, the perso
 
 And yes... please sort a result by ‘interval_info’ column in ascending mode.
 
-## Chapter XII
 ## Exercise 08 — First steps into SQL world
 
 
@@ -249,7 +163,6 @@ And yes... please sort a result by ‘interval_info’ column in ascending mode.
 
 Create an SQL statement that returns all columns from the `person_order` table with rows whose identifier is an even number. The result must be ordered by the returned identifier.
 
-## Chapter XIII
 ## Exercise 09 — First steps into SQL world
 
 
